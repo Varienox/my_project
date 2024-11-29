@@ -12,7 +12,7 @@ async function handleSubmit(e) {
 }
 
 async function getChat() {
-  displasyChat.value = await my_project_backend.get_chat()
+  displayChat.value = await my_project_backend.get_chat()
 }
 
 getChat()
@@ -28,8 +28,8 @@ getChat()
       <input id="msg" alt="msg" type="text" />
       <button type="submit">Click Me!</button>
     </form>
-    <section id="displasyChat">
-      <div>{{ displasyChat }}</div>
+    <section id="displayChat">
+      <div>{{ displayChat }}</div>
     </section>
   </main>
 </template>
