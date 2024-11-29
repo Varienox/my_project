@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import { my_project_backend } from 'declarations/my_project_backend/index';
-let displasyChat = ref([]);
+let displayChat = ref([]);
 
 async function handleSubmit(e) {
   e.preventDefault();
@@ -19,7 +19,8 @@ getChat()
 </script>
 
 <template>
-  <main>
+  <main class="container nx-auto">
+    
     <img src="/logo2.svg" alt="DFINITY logo" />
     <br />
     <br />
